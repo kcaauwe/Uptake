@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161202 13:30:31.787" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="C:\development\robot\Uptake\tests" id="s1" name="Tests">
+<suite source="C:\development\robot\Uptake\tests\page_verification.robot" id="s1-s1" name="Page Verification">
+<test id="s1-s1-t1" name="SiteNavigationTest">
+<kw name="Open Site" library="page_verification_resources">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20161202 13:30:32.421" level="INFO">Opening browser 'chrome' to base url 'https://uptake.com/'</msg>
+<status status="PASS" endtime="20161202 13:30:46.709" starttime="20161202 13:30:32.419"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161202 13:30:49.197" starttime="20161202 13:30:46.710"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<status status="PASS" endtime="20161202 13:30:50.278" starttime="20161202 13:30:49.197"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:30:50.279" starttime="20161202 13:30:32.418"></status>
+</kw>
+<kw name="Verify Home Page" library="page_verification_resources">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20161202 13:30:51.213" level="INFO">Page title is 'Uptake – Analytics for the Industrial Internet'.</msg>
+<status status="PASS" endtime="20161202 13:30:51.214" starttime="20161202 13:30:50.496"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:30:51.215" starttime="20161202 13:30:50.473"></status>
+</kw>
+<kw name="Navigate to Blog Page" library="page_verification_resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${BlogLink}</arg>
+</arguments>
+<msg timestamp="20161202 13:30:51.274" level="INFO">Clicking element 'xpath=//*[@id="menu-item-4166"]/a'.</msg>
+<status status="PASS" endtime="20161202 13:30:56.144" starttime="20161202 13:30:51.271"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${BlogTitle}</arg>
+<arg>${WaitTime}</arg>
+</arguments>
+<status status="PASS" endtime="20161202 13:30:56.234" starttime="20161202 13:30:56.144"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20161202 13:30:57.917" starttime="20161202 13:30:56.235"></status>
+</kw>
+<kw name="Verify Home Page" library="page_verification_resources">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20161202 13:30:58.227" level="INFO">Page title is 'Uptake – Analytics for the Industrial Internet'.</msg>
+<status status="PASS" endtime="20161202 13:30:58.228" starttime="20161202 13:30:57.920"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:30:58.229" starttime="20161202 13:30:57.918"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:30:58.230" starttime="20161202 13:30:51.268"></status>
+</kw>
+<kw name="Navigate to People Page" library="page_verification_resources">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PeopleLink}</arg>
+</arguments>
+<msg timestamp="20161202 13:30:58.237" level="INFO">Clicking element 'xpath=//*[@id="menu-item-4162"]/a'.</msg>
+<status status="PASS" endtime="20161202 13:31:01.322" starttime="20161202 13:30:58.236"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${PeopleHeader}</arg>
+<arg>${WaitTime}</arg>
+</arguments>
+<status status="PASS" endtime="20161202 13:31:01.457" starttime="20161202 13:31:01.323"></status>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20161202 13:31:03.396" starttime="20161202 13:31:01.458"></status>
+</kw>
+<kw name="Verify Home Page" library="page_verification_resources">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${Title}</arg>
+</arguments>
+<msg timestamp="20161202 13:31:03.761" level="INFO">Page title is 'Uptake – Analytics for the Industrial Internet'.</msg>
+<status status="PASS" endtime="20161202 13:31:03.762" starttime="20161202 13:31:03.399"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:31:03.763" starttime="20161202 13:31:03.397"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:31:03.764" starttime="20161202 13:30:58.234"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161202 13:31:06.975" starttime="20161202 13:31:03.767"></status>
+</kw>
+<status status="PASS" endtime="20161202 13:31:06.977" critical="yes" starttime="20161202 13:30:32.415"></status>
+</test>
+<doc>site navigation verification using page object model</doc>
+<status status="PASS" endtime="20161202 13:31:06.982" starttime="20161202 13:30:31.888"></status>
+</suite>
+<status status="PASS" endtime="20161202 13:31:06.999" starttime="20161202 13:30:31.796"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="1">Tests</stat>
+<stat fail="0" id="s1-s1" name="Page Verification" pass="1">Tests.Page Verification</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
